@@ -7,7 +7,7 @@ incrementing screenshots.
 Installation
 ------------
 
-First, you need [webkit2png](http://www.paulhammond.org/webkit2png/). I recommend installing it via [Homebrew](http://brew.sh/)
+First, you need [webkit2png](http://www.paulhammond.org/webkit2png/). I recommend installing it via [Homebrew](http://brew.sh/):
 
 ```bash
 brew install webkit2png
