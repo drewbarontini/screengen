@@ -1,7 +1,8 @@
 Screengen
 =========
 
-Wrapper around [webkit2png](http://www.paulhammond.org/webkit2png/) for grabbing screenshots from a text file containing URLs.
+Wrapper around [webkit2png](http://www.paulhammond.org/webkit2png/) for grabbing screenshots, grabbing screenshots from a text file containing URLs, and grabbing
+incrementing screenshots.
 
 Installation
 ------------
