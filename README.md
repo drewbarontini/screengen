@@ -30,6 +30,20 @@ sg 800 600 google.com # 800x600 screenshot
 sg-file urls.txt 800 600
 ```
 
+`urls.txt`:
+
+```text
+google.com
+dribbble.com
+github.com
+```
+
+Which will generate:
+
+- `screenshot-google-full.png`
+- `screenshot-dribbble-full.png`
+- `screenshot-github-full.png`
+
 **Incrementing Screenshots**
 
 ```bash
