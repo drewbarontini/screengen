@@ -19,8 +19,8 @@ function clean_url() {
 ## ----- Run ----- ##
 ## Runs a command a set number of times
 ##
-## $1 - the number of times to run the command
-## $2 - the command to run
+## $1 - number of times to run the command
+## $2 - command to run
 ##
 ## Usage: `run 5 some_command`
 ##
@@ -85,10 +85,10 @@ function sg() {
 ## ----- Screenshots From File ----- ##
 ## Takes a set of screenshots from a file
 ##
-## $1 - The file to read from
-## $2 - The width
-## $3 - The height
-## $4 - The URL
+## $1 - file
+## $2 - width
+## $3 - height
+## $4 - URL
 ##
 ## Usage: `sg-file urls.txt`
 ##
