@@ -9,10 +9,10 @@
 ##
 ## $1 - the URL
 ##
-## Usage: `clean_url 'google.com'`
+## Usage: `sg-clean-url 'google.com'`
 ##
 
-function clean_url() {
+function sg-clean-url() {
   echo $1 | sed 's/\.[[:alnum:]]*//' | tr ./_ -
 }
 
@@ -22,10 +22,10 @@ function clean_url() {
 ## $1 - number of times to run the command
 ## $2 - command to run
 ##
-## Usage: `run 5 some_command`
+## Usage: `sg-run 5 some_command`
 ##
 
-function run() {
+function sg-run() {
   local num=$1
   shift
   for i in `seq $num`
@@ -73,7 +73,7 @@ function sg-init() {
 
 function sg() {
   local re='^[0-9]+$'
-  local page=$(clean_url $1)
+  local page=$(sg-clean-url $1)
   if ! [[ $1 =~ $re ]]
   then
     webkit2png -W $SGWIDTH -H $SGHEIGHT -F -o screenshot-$page http://$1
@@ -98,7 +98,7 @@ function sg-file() {
   while read line
   do
     local url=$(echo $line | awk '{print $1}')
-    local page=$(clean_url $url)
+    local page=$(sg-clean-url $url)
     local size=$(echo $line | awk '{print $2}')
     local width=$(echo $size | awk -F 'x' '{print $1}')
     local height=$(echo $size | awk -F 'x' '{print $2}')
@@ -109,7 +109,7 @@ function sg-file() {
 
 ## ----- Screenshot Incrementer ----- ##
 ## Runs over a set of incrementing URLs
-## Requires: `run` function
+## Requires: `sg-run` function
 ##
 ## $1 - width
 ## $2 - height

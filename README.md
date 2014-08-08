@@ -56,7 +56,7 @@ Which will generate:
 **Incrementing Screenshots**
 
 ```bash
-run 10 sg-inc 1024 768 example.com/#
+sg-run 10 sg-inc 1024 768 example.com/#
 ```
 
 Which will output:
