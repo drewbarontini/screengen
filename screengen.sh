@@ -26,7 +26,7 @@ function clean_url() {
 ##
 
 function run() {
-  num=$1
+  local num=$1
   shift
   for i in `seq $num`
   do
@@ -70,8 +70,8 @@ function sg-init() {
 ##
 
 function sg() {
-  re='^[0-9]+$'
-  page=$(clean_url $1)
+  local re='^[0-9]+$'
+  local page=$(clean_url $1)
   if ! [[ $1 =~ $re ]]
   then
     webkit2png -W 1440 -H 900 -F -o screenshot-$page http://$1
@@ -92,11 +92,11 @@ function sg() {
 ##
 
 function sg-file() {
-  i=1
+  local i=1
   while read line
   do
-    url=$line
-    page=$(clean_url $url)
+    local url=$line
+    local page=$(clean_url $url)
     webkit2png -W $2 -H $3 -F -o screenshot-$page http://$url
     let i++
   done < $1
