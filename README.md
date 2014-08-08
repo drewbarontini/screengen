@@ -74,3 +74,7 @@ Which will output:
 
 **Note**: This is based on the URL having an incrementing number. For example, an HTML slidedeck.
 
+**ZIP File**
+
+If you want to easily zip up your screenshots, run `sg-zip` and it'll create a `screengen.zip` directory.
+
