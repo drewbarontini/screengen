@@ -76,5 +76,5 @@ Which will output:
 
 **ZIP File**
 
-If you want to easily zip up your screenshots, run `sg-zip` and it'll create a `screengen.zip` directory.
+If you want to easily zip up your screenshots, run `sg-zip` and it'll create a `screengen.zip` file.
 
