@@ -17,6 +17,14 @@ Next, you'll need to move the contents of `screengen.sh` into your `~/.bash_prof
 Usage
 -----
 
+**Initialization**
+
+```bash
+sg-init
+```
+
+This command creates a `screengen` directory with a `urls.txt` file, and then moves into that diretory for you to generate the screenshots.
+
 **Basic Single Screenshot**
 
 ```bash
