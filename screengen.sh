@@ -43,6 +43,8 @@ function run() {
 
 SGDIR='screengen'
 SGFILE='urls.txt'
+SGWIDTH='1440'
+SGHEIGHT='900'
 
 ## ----- Screengen Init ----- ##
 ## Sets up the structure for Screengen
@@ -74,7 +76,7 @@ function sg() {
   local page=$(clean_url $1)
   if ! [[ $1 =~ $re ]]
   then
-    webkit2png -W 1440 -H 900 -F -o screenshot-$page http://$1
+    webkit2png -W $SGWIDTH -H $SGHEIGHT -F -o screenshot-$page http://$1
   else
     webkit2png -W $1 -H $2 -F -o screenshot-$page http://$3
   fi
