@@ -1,7 +1,7 @@
 Screengen
 =========
 
-Wrapper around webkit2png for grabbing screenshots from a text file containing URLs.
+Wrapper around [webkit2png](http://www.paulhammond.org/webkit2png/) for grabbing screenshots from a text file containing URLs.
 
 Installation
 ------------
@@ -48,4 +48,6 @@ Which will output:
 - `screenshot-8.png`
 - `screenshot-9.png`
 - `screenshot-10.png`
+
+**Note**: This is based on the URL having an incrementing number. For example, an HTML slidedeck.
 
