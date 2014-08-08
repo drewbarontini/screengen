@@ -8,7 +8,7 @@ Installation
 
 First, you need [webkit2png](http://www.paulhammond.org/webkit2png/). I recommend installing it via [Homebrew](http://brew.sh/)
 
-```shell
+```bash
 brew install webkit2png
 ```
 
@@ -19,33 +19,33 @@ Usage
 
 **Basic Single Screenshot**
 
-```shell
+```bash
 sg google.com # Standard, 1440x900 screenshot
 sg 800 600 google.com # 800x600 screenshot
 ```
 
 **Screenshots From File**
 
-```shell
+```bash
 sg-file urls.txt 800 600
 ```
 
 **Incrementing Screenshots**
 
-```shell
+```bash
 run 10 sg-inc 1024 768 example.com/#
 ```
 
 Which will output:
 
-- `screenshot-1.png'`
-- `screenshot-2.png'`
-- `screenshot-3.png'`
-- `screenshot-4.png'`
-- `screenshot-5.png'`
-- `screenshot-6.png'`
-- `screenshot-7.png'`
-- `screenshot-8.png'`
-- `screenshot-9.png'`
-- `screenshot-10.png'`
+- `screenshot-1.png`
+- `screenshot-2.png`
+- `screenshot-3.png`
+- `screenshot-4.png`
+- `screenshot-5.png`
+- `screenshot-6.png`
+- `screenshot-7.png`
+- `screenshot-8.png`
+- `screenshot-9.png`
+- `screenshot-10.png`
 
