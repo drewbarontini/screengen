@@ -36,15 +36,15 @@ sg 800 600 google.com # 800x600 screenshot
 **Screenshots From File**
 
 ```bash
-sg-file urls.txt 800 600
+sg-file urls.txt
 ```
 
 `urls.txt`:
 
 ```text
-google.com
-dribbble.com
-github.com
+google.com 800x600
+dribbble.com 1024x768
+github.com 1280x800
 ```
 
 Which will generate:

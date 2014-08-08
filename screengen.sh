@@ -88,16 +88,19 @@ function sg() {
 ## $3 - The height
 ## $4 - The URL
 ##
-## Usage: `sg-file urls.txt 800 600`
+## Usage: `sg-file urls.txt`
 ##
 
 function sg-file() {
   local i=1
   while read line
   do
-    local url=$line
+    local url=$(echo $line | awk '{print $1}')
     local page=$(clean_url $url)
-    webkit2png -W $2 -H $3 -F -o screenshot-$page http://$url
+    local size=$(echo $line | awk '{print $2}')
+    local width=$(echo $size | awk -F 'x' '{print $1}')
+    local height=$(echo $size | awk -F 'x' '{print $2}')
+    webkit2png -W $width -H $height -F -o screenshot-$page http://$url
     let i++
   done < $1
 }
